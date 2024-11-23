@@ -17,13 +17,12 @@ def frq_txt(text):
     
     return result
 
-# Text from the english_sample.txt
-text = """Exploring the breathtaking landscapes of the English countryside is truly a remarkable experience.
-From the rolling hills covered in vibrant green to the charming little villages nestled along meandering rivers, there is an undeniable sense of tranquility and beauty.
-The picturesque scenery, combined with the rich history and culture, creates a perfect blend of old-world charm and modern-day allure.
-Whether you choose to stroll through the enchanting gardens, visit historic castles, or indulge in traditional afternoon tea, there is something for everyone to enjoy in this captivating destination."""
+# Program to read the entire file using read() function
+file = open("english_sample.txt", "r")
+content = file.read()
 
-
-# Call the function with the example text
-character_frequencies = frq_txt(text)
+# Call the function with the english sample text
+character_frequencies = frq_txt(content)
 print(character_frequencies)
+
+
